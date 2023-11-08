@@ -1,4 +1,15 @@
 /*
   Переменные для вашего проекта
   и их переопределение под различные устройства
+  (
 */
+:root {
+  --accent-color: #FF0070;
+  --secondary-backround-color: #FF0070;
+  --main-heading-color: #DB00FF;
+  --title-color: #FF0070;
+  --card-title-color: #000028;
+  --font-color: #F1B2CE;
+  --theme-switch-color: #FF0070;
+  --decoration-color: #FF0070;
+}
