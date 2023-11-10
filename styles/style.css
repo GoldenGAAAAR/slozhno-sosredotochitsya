@@ -229,6 +229,13 @@ html {
   margin-left: 10px;
 }
 
+main .title-decor {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 @media (min-width: 768px) {
   .main {
     margin-right: 20px;
@@ -293,6 +300,11 @@ html {
   display: grid;
 }
 
+
+.section__3 h4 {
+  margin-bottom: 0px;
+}
+
 @media (min-width: 768px) {
   .section__3 {
     grid-template-columns: 1fr 2fr;
@@ -301,7 +313,11 @@ html {
   }
 
   .section__3 .section__title {
-    margin-top: 20px;
+    margin-top: 23px;
+  }
+
+  .section__3 h4 {
+    margin-top: 22px;
   }
 }
 
@@ -321,17 +337,6 @@ html {
   line-height: 23px;
   letter-spacing: 0em;
   text-align: left;
-}
-
-main .title-decor {
-  margin-bottom: 10px;
-  margin-top: 20px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.section__3 h4 {
-  margin-bottom: 0px;
 }
 
 .section__card h5{
