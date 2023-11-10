@@ -271,7 +271,7 @@ main .title-decor {
 
 .section__2 {
   display: grid;
-  margin-top: 20px;
+  margin-top: 19px;
 }
 
 @media (min-width: 768px) {
@@ -299,6 +299,7 @@ main .title-decor {
 
 .section__3 {
   display: grid;
+  margin-top: 18px;
 }
 
 
@@ -362,7 +363,7 @@ main .title-decor {
 }
 
 .section__4 .section__card-title {
-  margin-top: 31px;
+  margin-top: 50px;
 }
 
 @media (min-width: 768px) {
