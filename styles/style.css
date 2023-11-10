@@ -10,13 +10,18 @@
   background-color: var(--main-backround-color);
   background-image: url(../images/cover-image-dark.png);
   background-repeat: no-repeat;
-  background-size: 1068px 100vh;
+  background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100vw;
   background-attachment: fixed;
 }
 
+@media (min-width: 1068px) {
+  .page {
+    background-size: cover;
+  }
+}
 
 /* header */
 .header {
@@ -49,6 +54,13 @@
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 125px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) 
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .header__title {
+    margin-top: 80px;
   }
 }
 
@@ -66,6 +78,11 @@
   padding: 0;
 }
 
+.header__paragragh-container {
+  margin-top: 20px;
+}
+
+
 @media (min-width: 768px) {
   .header__paragragh-container{
     margin-left: 50vw;
@@ -79,9 +96,8 @@
 }
 
 @media (min-width: 1024px) {
-  .title-decor {
-    margin-left: 0px;
-    margin-right: 0px;
+  .header__paragragh-container{
+    margin-top: 30px;
   }
 }
 
@@ -95,6 +111,7 @@
   border-top: 1px solid var(--secondary-backround-color);
   border-right: 1px solid var(--secondary-backround-color);
 }
+
 
 .decoration-border-2::before {
   position: absolute;
@@ -126,6 +143,29 @@
   border-radius: 50%;
   box-shadow: 0 0 3px 2px var(--decoration-color);
 }
+
+@media (min-width: 768px) {
+  .decoration-border-1::before {
+    top: 20px;
+    right: 20px;
+  }
+  
+  .decoration-border-2::before {
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .lamp-text::before {
+    top: 24px;
+    right: 50px;;
+  }
+  
+  .lamp-point::before {
+    top: 29px;
+    right: 29px;
+  }
+}
+
 
 .header__theme-menu {
   justify-self: end;
@@ -159,6 +199,8 @@
   .header__theme-menu-list {
     flex-direction: row;
     margin-top: 21.5px;
+    gap: 10px;
+    padding-left: 20px;
   }
 }
 
@@ -195,7 +237,7 @@
 }
 
 .section__1 .section__title {
-  margin-top: 42px;
+  margin-top: 40px;
 }
 
 @media (min-width: 768px) {
@@ -210,14 +252,19 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .section__1 {
+    gap: 10px;
+  }
+}
+
 .section__2 {
   display: grid;
 }
 
 @media (min-width: 768px) {
   .section__2 {
-    grid-template-rows: min-content, repeat(3, 1fr);
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   .section__2 .section__title {
@@ -226,19 +273,16 @@
 }
 
 @media (min-width: 1024px) {
-  .section__2 {
-    grid-template-rows: min-content, 1fr;
-  }
-
   .section__2 .section__content {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
 
   .section__2 .section__title {
-    width: 315px;
+    min-width: 315px;
   }
+  
 }
 
 .section__3 {
@@ -257,8 +301,14 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .section__3 {
+    gap: 10px;
+  }
+}
+
 .section__title {
-  margin-top: 50px;
+  margin-top: 33px;
   margin-bottom: 0px;
   color: var(--secondary-backround-color);
   font-family: IBM Plex Mono;
@@ -269,18 +319,15 @@
   text-align: left;
 }
 
-.section__card-title {
-  color: var(--card-title-color);
-  border: 1px solid var(--accent-color);
-  background-color: var(--accent-color);
-  font-family: IBM Plex Mono;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23px;
-  letter-spacing: 0em;
-  text-align: left;
+main .title-decor {
   margin-bottom: 10px;
   margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.section__3 h4 {
+  margin-bottom: 0px;
 }
 
 .section__card h5{
@@ -304,7 +351,13 @@
 }
 
 .section__4 .section__card-title {
-  margin-top: 50px;
+  margin-top: 31px;
+}
+
+@media (min-width: 768px) {
+  .section__4 .section__card-title {
+    margin-top: 27px;
+  }
 }
 
 .section__gallery {
@@ -368,6 +421,8 @@
   }
 }
 
+
+
 footer {
   width: 100%;
   margin-top: 40px;
@@ -387,8 +442,23 @@ footer .header__title {
   footer .header__title {
     margin-top: 0px;
     margin-bottom: 35px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) 
   }
 }
+
+@media (min-width: 768px) {
+  .footer .decoration-border-1::before {
+    top: 0px;
+    right: 20px;
+  }
+  
+  .footer .decoration-border-2::before {
+    bottom: 40px;
+    left: 20px;
+  }
+  
+}
+
 
 .section__gallery img {
   max-width: 100%;
@@ -423,8 +493,3 @@ footer .header__title {
 .header__theme-menu-button_active {
   pointer-events: none;
 }
-
-.header__paragragh-container {
-  margin-top: 20px;
-}
-
