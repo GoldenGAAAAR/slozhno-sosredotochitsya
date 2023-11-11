@@ -13,11 +13,13 @@
   --theme-switch-color: #353430;
   --font-color: #353430;
   --decoration-color: transparent;
+  --background-color: #FFF1F7;
+  --hover-button-color: #32312D66;
+  ;
 }
 
 @media (prefers-color-scheme: light) {
   .page {
-    background-color: var(--main-backround-color);
     background-image: url(../images/cover-image-light.png);
     --card-title-color:#353430;
     --main-heading-color: #FFC2E6;
@@ -26,5 +28,7 @@
     --theme-switch-color: #353430;
     --font-color: #353430;
     --decoration-color: transparent;
+    --background-color: #FFF1F7;
+    --hover-button-color: #32312D66;
   }
 }

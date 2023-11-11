@@ -5,6 +5,8 @@
 */
 :root {
   --accent-color: #FF0070;
+  --hover-button-color: #FF007066;
+  --background-color: #000028;
   --secondary-backround-color: #FF0070;
   --main-heading-color: #DB00FF;
   --title-color: #FF0070;
