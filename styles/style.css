@@ -59,12 +59,12 @@ html {
   margin-top: 40px;
 }
 
-.decoration-border-1::before, .decoration-border-2::before, .lamp-point::before {
+.decoration-border-top::before, .decoration-border-bottom::before, .lamp-point::before {
   position: absolute;
   content: "";
 }
 
-.decoration-border-1::before {
+.decoration-border-top::before {
   top: 10px;
   right: 0px;
   height: 25px;
@@ -73,7 +73,7 @@ html {
   border-right: 1px solid var(--secondary-backround-color);
 }
 
-.decoration-border-2::before {
+.decoration-border-bottom::before {
   bottom: 10px;
   left: 0px;
   height: 25px;
@@ -145,7 +145,7 @@ main .title-decor {
   margin-right: 0px;
 }
 
-.section__two-cards {
+.section__display {
   display: grid;
 }
 
@@ -154,12 +154,10 @@ main .title-decor {
 }
 
 .section__three-cards {
-  display: grid;
   margin-top: 19px;
 }
 
 .section__five-cards {
-  display: grid;
   margin-top: 18px;
 }
 
@@ -205,7 +203,6 @@ main .title-decor {
 }
 
 .section__gallery {
-  display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(5, min-content);
   gap: 10px;
@@ -232,11 +229,11 @@ footer .title {
   align-self: center;
 }
 
-.footer .decoration-border-1::before {
+.footer .decoration-border-top::before {
   right: 10px;
 }
 
-.footer .decoration-border-2::before {
+.footer .decoration-border-bottom::before {
   left: 10px;
 }
 
@@ -297,12 +294,12 @@ footer .title {
     margin-right: 0px;
   }
 
-  .decoration-border-1::before {
+  .decoration-border-top::before {
     top: 20px;
     right: 20px;
   }
   
-  .decoration-border-2::before {
+  .decoration-border-bottom::before {
     bottom: 20px;
     left: 20px;
   }
@@ -376,28 +373,24 @@ footer .title {
     gap: 20px;
   }
 
-  .section__gallery-1 {
+  .section__gallery-sunset {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
-  .section__gallery-2 {
+  .section__gallery-icecream {
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end: 4;
-    block-size: 100%;
-    object-fit: cover;
   }
 
-  .section__gallery-3 {
+  .section__gallery-tape {
     grid-row-start: 2;
     grid-row-end: 4;
-    block-size: 100%;
-    object-fit: cover;
   }
 
-  .section__gallery-4 {
+  .section__gallery-books {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
@@ -405,7 +398,7 @@ footer .title {
     
   }
 
-  .section__gallery-5 {
+  .section__gallery-street {
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 2;
@@ -418,12 +411,12 @@ footer .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
-  .footer .decoration-border-1::before {
+  .footer .decoration-border-top::before {
     top: 0px;
     right: 20px;
   }
   
-  .footer .decoration-border-2::before {
+  .footer .decoration-border-bottom::before {
     bottom: 40px;
     left: 20px;
   }
